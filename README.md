@@ -18,23 +18,18 @@
 
 ## 📌 Overview
 
-ICS/SCADA/OT offline security auditor & protocol intelligence
+OICS — ICS / SCADA / OT Offline Security Auditor. It provides industrial protocol knowledge base — Modbus/TCP, DNP3, S7comm / S7commPlus, EtherNet/IP + CIP, BACnet/IP, OPC UA, IEC 60870-5-104, PROFINET, IEC 61850 MMS/GOOSE, HART-IP, Niagara Fox, CODESYS, GE-SRTP, OMRON FINS, MELSEC, Crimson, ... (ports, security properties, typical CVE classes).
 
 ---
 
 ## ✨ Features
 
-- Industrial protocol knowledge base — Modbus/TCP, DNP3, S7comm / S7commPlus, EtherNet/IP + CIP, BACnet/IP, OPC UA, IEC 60870-5-104, PROFINET, IEC 61850 MMS/GOOSE, HART-IP, Niagara Fox, CODESYS, GE-SRTP, OMRON FINS, MELSEC, Crimson, ... (ports, security properties, typical CVE classes)
+- Industrial protocol knowledge base — Modbus/TCP, DNP3, S7comm / S7commPlus, EtherNet/IP + CIP, BACnet/IP, OPC UA, IEC 60870-5-104, PROFINET, IEC 61850 MMS/GOOSE, HART-IP, Niagara Fox, CODESYS, GE-SRTP, OMRON FINS, MELSEC
 - Offline protocol identification from port lists, banner text and pasted packet hex (pure parsing)
 - Deep packet decoders — Modbus MBAP+PDU, DNP3 link / transport / application, TPKT/COTP/S7, ENIP + CIP, BVLC/NPDU/APDU, OPC UA, IEC-104 APCI/ASDU, PN-DCP
 - Function-code dictionaries flagging write / control /
 - OT asset-inventory auditor (CSV / JSON, tolerant): exposure, unauthenticated protocols, default creds, outdated firmware, flat IT/OT networks, legacy HMI OS, remote access, missing monitoring / backups
 - MITRE ATT&CK for ICS mapping + NIST SP 800-82r3, IEC 62443-3-3 SR and ISA/IEC zone references
-- Weighted A+…F risk grade with remediation plan
-- Purdue-model zone map and conduit analysis
-- Export TXT / Markdown / JSON / CSV / SARIF 2.1.0
-- --demo self-test with a generated insecure plant
-- Strictly READ-ONLY and OFFLINE — never touches a live device, never sends a packet
 
 ---
 
@@ -48,7 +43,10 @@ ICS/SCADA/OT offline security auditor & protocol intelligence
 ## 🚀 Usage
 
 ```bash
-./OICS
+./OICS                                     # interactive menu
+./OICS --path ./config_or_ruleset
+./OICS --demo
+./OICS --help
 ```
 
 ---
